@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/SignUp.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <title>Mercado Preso</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <div class="logo">
+                <i class="fa-solid fa-shop-lock"></i>
+                <h1>Mercado Preso</h1>
+            </div>
+        </a>
+    </header>
+    <main>
+        <section>
+            <form>
+                <label for="Name">Nome:</label>
+                <input type="text" required placeholder="Digite seu nome..." id="Name">
+                <label for="surname">Sobrenome:</label>
+                <input type="text" required placeholder="Digite seu sobrenome..." id="Name">
+                <label for="Email">Email:</label>
+                <input type="email" required placeholder="Digite seu Email..." id="Email">
+                <label for="Birth">Data de nascimento:</label>
+                <input type="date" required id="Birth">
+                <label for="Adress">Endereço:</label>
+                <input type="text" required placeholder="Digite seu Endereço..." id="Adress">
+                <label for="country">País:</label>
+                <select name="country" id="country" required>
+                    <option value="X" selected disabled>Selecione uma opção</option>
+                    <option value="EUA">Estados Unidos da Améria</option>
+                    <option value="BR">Brasil</option>
+                    <option value="PT">Portugal</option>
+                    <option value="ES">Espanha</option>
+                    <option value="MEX">México</option>
+                    <option value="FRA">França</option>
+                    <option value="ARG">Argentina</option>
+                    <option value="PAR">Paraguai</option>
+                    <option value="JP">Japão</option>
+                    <option value="RU">Rússia</option>
+                </select>
+                <label for="password">Senha:</label>
+                <input type="password" required id="password">
+                <div>
+                    <input type="checkbox" required id="Terms-service" name="Terms-service">
+                    <label for="Terms-service">Li e concordo com a <a href="#">Política de Privacidade</a> e com os <a
+                            href="#">Termos de
+                            Uso</a>.</label>
+                </div>
+                <button id="create-account" type="submit">Criar conta</button>
+            </form>
+            <a href="Login.html" id="Login">Já tenho uma conta</a>
+        </section>
+    </main>
+
+
+
+
+    <script src="https://kit.fontawesome.com/a800e64313.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

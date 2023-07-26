@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --blue-primary: #115efb;
+    --blue-secondary: #4281ff;
+    --gray-primary: #aeaeae;
+    --black: #000;
+    --border-radius: 8px;
+    --width: 408px;
+    --height: 48px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: var(--blue-primary);
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    padding-left: 20rem;
+    color: var(--gray-primary);
+}
+
+header div i{
+    font-size: 25px;
+    padding-right: 8px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94.6%;
+}
+
+section{
+    border: solid var(--black) 1px;
+    width: 490px;
+    height: 249px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+section p{
+    padding-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+form input{
+    border-radius: var(--border-radius);
+    border: solid var(--black) 1px;
+    width: var(--width);
+    height: var(--height);
+}
+
+form input:focus{
+    outline: none;
+}
+
+#continue{
+    width: 124px;
+    height: var(--height);
+    border-radius: var(--border-radius);
+    background-color: var(--blue-primary);
+    color: #fff;
+    border: solid var(--black) 1px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+}
+
+#continue:hover{
+    background-color: var(--blue-secondary);
+}
+
+#create-account{
+    width: 124px;
+    height: var(--height);
+    background-color: transparent;
+    border: none;
+}
+
+#create-account a{
+    font-size: 20px;
+}
+
+section div{
+    display: flex;
+    width: var(--width);
+    height: var(--height);
+    gap: 24px;
+}
+
+section span{
+    font-size: 14px;
+}
+
+a{
+    color: var(--blue-primary);
+}

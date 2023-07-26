@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --blue-primary: #115efb;
+    --blue-secondary: #4281ff;
+    --gray-primary: #aeaeae;
+    --black: #000;
+    --padding-1: .5rem;
+    --padding-2: 1rem;
+    --border-radius: 8px;
+    --width: 408px;
+    --height: 48px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: var(--blue-primary);
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    padding-left: 20rem;
+    color: var(--gray-primary);
+}
+
+header div i{
+    font-size: 25px;
+    padding-right: 8px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94.6%;
+}
+
+section{
+    border: solid 1px var(--black);
+    width: 480px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: var(--border-radius);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--padding-2);
+}
+
+input:nth-child(n+2),
+select{
+    border: solid var(--black) 1px;
+    border-radius: var(--border-radius);
+    width: var(--width);
+    height: var(--height);
+}
+
+form div{
+    width: var(--width);
+}
+
+#create-account{
+    width: var(--width);
+    border-radius: var(--border-radius);
+    border: solid 1px var(--black);
+    background-color: var(--blue-primary);
+    color: var(--gray-primary);
+    height: var(--height);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#Login{
+    font-size: 15px;
+}
+
+input:focus{
+    outline: none;
+}
