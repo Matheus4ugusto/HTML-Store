@@ -10,6 +10,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 70%;
+}
+
 :root{
     --blue-primary: #115efb;
     --blue-secondary: #4281ff;
@@ -18,4 +24,31 @@
     --border-radius: 8px;
     --width: 408px;
     --height: 48px;
+    --paddin-1: 0 3rem;
+    --padding-2: 1rem;
+
+
+}
+
+header{
+    grid-column: 1/1;
+    height: 100%;
+    border-right: solid 1px var(--gray-primary) ;
+}
+
+.profile{
+    padding: var(--padding-2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile small{
+    display: block;
+}
+
+.profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
