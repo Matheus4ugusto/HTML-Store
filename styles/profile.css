@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 70%;
+}
+
+:root{
+    --blue-primary: #115efb;
+    --blue-secondary: #4281ff;
+    --gray-primary: #aeaeae;
+    --black: #000;
+    --border-radius: 8px;
+    --width: 408px;
+    --height: 48px;
+    --paddin-1: 0 3rem;
+    --padding-2: 1rem;
+    --margin-1: 1rem;
+
+}
+
+header{
+    grid-column: 1/1;
+    height: 100%;
+    border-right: solid 1px var(--gray-primary) ;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile{
+    padding: var(--padding-2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile small{
+    display: block;
+}
+
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.menu-profile{
+    padding-top: var(--padding-2);
+    border-top: solid 1px var(--gray-primary);
+}
+
+.menu-profile li{
+    padding: .5rem var(--padding-2);
+    transition: all .3s;
+}
+
+.menu-profile li:hover{
+    background-color: var(--gray-primary);
+}
+
+.menu-profile li:hover a{
+    color: #fff;
+}
+
+.menu-profile li a{
+    color: var(--gray-primary);
+    font-weight: bold;
+}
+
+#logout{
+    width: fit-content;
+    margin: auto auto var(--margin-1) var(--margin-1);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
