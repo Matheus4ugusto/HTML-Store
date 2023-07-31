@@ -171,6 +171,12 @@ main{
     height: 200px;
 }
 
+#categories-title{
+    padding-top: 3rem;
+    position: absolute;
+    top: 53.3rem;
+}
+
 .categories{
     display: grid;
     grid-template-areas:
@@ -289,6 +295,10 @@ footer{
 
 @media (max-width: 768px){
 
+    body{
+        width: 100vw;
+    }
+
     header{
         display: flex;
         width: 768px;
@@ -317,9 +327,22 @@ footer{
         height: 100%;
         object-fit: contain;
     }
-    
 
     .offers ul li{
         min-width: calc(100%/3);
+    }
+
+    #categories-title{
+        padding-top: 3rem;
+        position: absolute;
+        top: 41rem;
+    }
+
+    .categories ul div li{
+        min-width: calc(100%/12);
+    }
+
+    footer{
+        transform: translateY(-230px);
     }
 }
